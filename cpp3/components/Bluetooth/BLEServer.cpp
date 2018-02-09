@@ -133,7 +133,7 @@ void BLEServer::handleGAPEvent(
 		esp_ble_gap_cb_param_t* param) {
 	ESP_LOGD(LOG_TAG, "BLEServer ... handling GAP event!");
 	switch(event) {
-		case ESP_GAP_BLE_ADV_DATA_SET_COMPLETE_EVT: {
+		case ESP_GAP_BLE_ADV_DATA_SET_COMPLETE_EVT:
 			/*
 			esp_ble_adv_params_t adv_params;
 			adv_params.adv_int_min       = 0x20;
@@ -150,7 +150,69 @@ void BLEServer::handleGAPEvent(
 			}
 			*/
 			break;
-		}
+		case ESP_GAP_BLE_SCAN_RSP_DATA_SET_COMPLETE_EVT:
+			break;
+		case ESP_GAP_BLE_SCAN_PARAM_SET_COMPLETE_EVT:
+			break;
+		case ESP_GAP_BLE_SCAN_RESULT_EVT:
+			break;
+		case ESP_GAP_BLE_ADV_DATA_RAW_SET_COMPLETE_EVT:
+			break;
+		case ESP_GAP_BLE_SCAN_RSP_DATA_RAW_SET_COMPLETE_EVT:
+			break;
+		case ESP_GAP_BLE_ADV_START_COMPLETE_EVT:
+			break;
+		case ESP_GAP_BLE_SCAN_START_COMPLETE_EVT:
+			break;
+		case ESP_GAP_BLE_AUTH_CMPL_EVT:
+			break;
+		case ESP_GAP_BLE_KEY_EVT:
+			break;
+		case ESP_GAP_BLE_SEC_REQ_EVT:
+			break;
+		case ESP_GAP_BLE_PASSKEY_NOTIF_EVT:
+			break;
+		case ESP_GAP_BLE_PASSKEY_REQ_EVT:
+			break;
+		case ESP_GAP_BLE_OOB_REQ_EVT:
+			break;
+		case ESP_GAP_BLE_LOCAL_IR_EVT:
+			break;
+		case ESP_GAP_BLE_LOCAL_ER_EVT:
+			break;
+		case ESP_GAP_BLE_NC_REQ_EVT:
+			break;
+		case ESP_GAP_BLE_ADV_STOP_COMPLETE_EVT:
+			break;
+		case ESP_GAP_BLE_SCAN_STOP_COMPLETE_EVT:
+			break;
+		case ESP_GAP_BLE_SET_STATIC_RAND_ADDR_EVT:
+			break;
+		case ESP_GAP_BLE_UPDATE_CONN_PARAMS_EVT:
+
+
+			//esp_ble_conn_update_params_t *conn_params;
+			//esp_ble_gap_update_conn_params(&conn_params);
+
+
+			break;
+		case ESP_GAP_BLE_SET_PKT_LENGTH_COMPLETE_EVT:
+			break;
+		case ESP_GAP_BLE_SET_LOCAL_PRIVACY_COMPLETE_EVT:
+			break;
+		case ESP_GAP_BLE_REMOVE_BOND_DEV_COMPLETE_EVT:
+			break;
+		case ESP_GAP_BLE_CLEAR_BOND_DEV_COMPLETE_EVT:
+			break;
+		case ESP_GAP_BLE_GET_BOND_DEV_COMPLETE_EVT:
+			break;
+		case ESP_GAP_BLE_READ_RSSI_COMPLETE_EVT:
+			break;
+		case ESP_GAP_BLE_UPDATE_WHITELIST_COMPLETE_EVT:
+			break;
+		case ESP_GAP_BLE_EVT_MAX:
+			break;
+
 
 		default:
 			break;

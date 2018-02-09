@@ -14,6 +14,8 @@
 #include <Socket.h>
 #include <SockServ.h>
 #include <WiFi.h>
+#include <BLE2902.h>
+
 typedef enum {
 	success, fail
 } sm_msg;
@@ -89,6 +91,7 @@ private:
 	BLEService *pService;
 	BLECharacteristic *pCharacteristic;
 	BLEAdvertising *pAdvertising;
+	BLE2902* p2902Descriptor;
 #endif
 	// wifi variables
 	WiFi * pWiFi;

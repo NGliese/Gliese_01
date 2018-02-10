@@ -9,15 +9,17 @@
 
 
 
-static char LOG_TAG[] = "SampleServer";
+static char LOG_TAG[] = "Bluetooth_Server";
 	void BluetoothServer:: run(void *data) {
 		ESP_LOGD(LOG_TAG, "Starting BLE work!");
-
+		// Init with name Bob
 		BLEDevice::init("Bob");
 		pServer = BLEDevice::createServer();
-
+		// point to the advertising channel
 		pAdvertising = pServer->getAdvertising();
+		// initialize the services
 		inittialize();
+		// start the advertising
 		pAdvertising->start();
 
 
@@ -29,7 +31,7 @@ static char LOG_TAG[] = "SampleServer";
 
 	std::string BluetoothServer::get_value(const char* serv_uuid,
 			const char* char_uuid) {
-
+		// get the value of a charactaristic of a services
 		ESP_LOGD(LOG_TAG, " ************************************");
 		ESP_LOGD(LOG_TAG, "get_value");
 
@@ -38,7 +40,12 @@ static char LOG_TAG[] = "SampleServer";
 			{
 				ESP_LOGD(LOG_TAG, " -> uuid match");
 			BLECharacteristic* pChar =	m_serviceUUIDs.at(i)->getCharacteristic(BLEUUID(char_uuid));
-			if(pChar != nullptr) return pChar->getValue();
+			if(pChar != nullptr)
+				{
+				ESP_LOGD(LOG_TAG, " ************************************");
+
+				return pChar->getValue();
+				}
 			}
 		}
 		ESP_LOGD(LOG_TAG, " ************************************");
@@ -48,6 +55,7 @@ static char LOG_TAG[] = "SampleServer";
 
 	void BluetoothServer::set_value(const char* serv_uuid, const char* char_uuid,
 			std::string data) {
+		// set the value of a charactaristic of a services
 		ESP_LOGD(LOG_TAG, " ************************************");
 		ESP_LOGD(LOG_TAG, "set_value");
 

@@ -17,7 +17,8 @@
 #include <nvs_flash.h>
 #include <Socket.h>
 #include <SockServ.h>
-#include <BLEDevice.h>
+
+#include "../components/Bluetooth_API/include/BLEDevice.h"
 #define PORT 22
 
 #define add "192.168.0.130"

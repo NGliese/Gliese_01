@@ -8,13 +8,14 @@
 #ifndef STATEMACHINE_H_
 #define STATEMACHINE_H_
 
-#include <BLEDevice.h>
 #include <string>
 #include <nvs_flash.h>
 #include <Socket.h>
 #include <SockServ.h>
 #include <WiFi.h>
-#include <BLE2902.h>
+
+#include "../../Bluetooth_API/include/BLE2902.h"
+#include "../../Bluetooth_API/include/BLEDevice.h"
 
 typedef enum {
 	success, fail

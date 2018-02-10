@@ -1,0 +1,45 @@
+/*
+ * BluetoothConfig.h
+ *
+ *  Created on: Feb 10, 2018
+ *      Author: gliese
+ */
+
+#ifndef COMPONENTS_BLUETOOTH_INCLUDE_BLUETOOTHCONFIG_H_
+#define COMPONENTS_BLUETOOTH_INCLUDE_BLUETOOTHCONFIG_H_
+
+#define SERVICE_LIGHT_UUID   "4fafc201-1fb5-459e-8fcc-c5c9c331914b"
+#define CHAR_LIGHT_MEASURE   "beb5483e-36e1-4688-b7f5-ea07361b26a8"
+#define CHAR_LIGHT_ACTUATE   "54059634-9448-404f-9af4-7d14556f3ad8"
+
+#define SERVICE_TEMP_UUID    "91bad492-b950-4226-aa2b-4ede9fa42f59"
+#define CHAR_TEMP_MEASURE 	 "78f8a814-7b20-40ca-b970-0aba448c53b1"
+#define CHAR_TEMP_ACTUATE	 "03a55273-c1ef-4eab-a6c0-7ff11509122f"
+
+#define SERVICE_ALARM_UUID	 "505baa6d-7c78-4f8b-bde4-0721a63ffaca"
+#define CHAR_ALARM_ACTUATE	 "0d19566d-2144-4443-9779-19d42e283439"
+
+/*
+
+ 505baa6d-7c78-4f8b-bde4-0721a63ffaca
+
+ 81f38dea-120b-4390-851d-c7c3cb3ae1d4
+
+ 2d1da805-022d-4de8-a2ef-cb1d7c04a97e
+
+ 01660644-310e-4f17-b802-f1e6c15928b8
+
+ 98366bc0-a8b0-4d1a-b2c0-e032de5630f6
+
+ 80d3955b-3561-4eb2-ac0c-e5a438492bb0
+
+ b85f5acb-cb63-4dc6-90dd-e43f9e8c9d99
+
+ 07db6f57-37bb-402d-b486-e5fa9c597a23
+
+ 6341c540-bda7-4d7e-8d51-f04407aac8f9
+
+ f16a1b8c-5b4f-4bf6-a874-232d86817032
+
+ * */
+#endif /* COMPONENTS_BLUETOOTH_INCLUDE_BLUETOOTHCONFIG_H_ */

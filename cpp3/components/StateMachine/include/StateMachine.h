@@ -13,9 +13,8 @@
 #include <Socket.h>
 #include <SockServ.h>
 #include <WiFi.h>
+#include <BluetoothServer.h>
 
-#include "../../Bluetooth_API/include/BLE2902.h"
-#include "../../Bluetooth_API/include/BLEDevice.h"
 
 typedef enum {
 	success, fail
@@ -58,6 +57,7 @@ public:
 	void quarry_add(sm_pair p);
 	void run(void);
 	bool wifi_run(void);
+	bool ble_run(void);
 	/** debug functions**/
 	void print_state(void);
 	void print_quarry(void);
@@ -88,11 +88,7 @@ private:
 	unsigned int capacity;
 #if defined(CONFIG_BT_ENABLED)
 	// bluetooth variables
-	BLEServer *pServer;
-	BLEService *pService;
-	BLECharacteristic *pCharacteristic;
-	BLEAdvertising *pAdvertising;
-	BLE2902* p2902Descriptor;
+BluetoothServer* pBluetoothServer;
 #endif
 	// wifi variables
 	WiFi * pWiFi;

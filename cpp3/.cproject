@@ -50,10 +50,9 @@
 									<listOptionValue builtIn="false" value="&quot;${IDF_PATH}/components/aws_iot/aws-iot-device-sdk-embedded-C/include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${IDF_PATH}/components/fatfs/src&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${IDF_PATH}/components/wear_levelling/include&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/cpp3/components/StateMachine/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/cpp3/components/WiFi/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/cpp3/components/Bluetooth/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Server/components/Bluetooth/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Server/components/StateMachine/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Server/components/WiFi/include}&quot;"/>
 								</option>
 								<option id="org.eclipse.cdt.build.core.settings.holder.symbols.1805799872" name="Symbols" superClass="org.eclipse.cdt.build.core.settings.holder.symbols" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="ESP_PLATFORM=1"/>
@@ -100,10 +99,9 @@
 									<listOptionValue builtIn="false" value="&quot;${IDF_PATH}/components/aws_iot/aws-iot-device-sdk-embedded-C/include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${IDF_PATH}/components/fatfs/src&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${IDF_PATH}/components/wear_levelling/include&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/cpp3/components/StateMachine/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/cpp3/components/WiFi/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/cpp3/components/Bluetooth/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Server/components/Bluetooth/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Server/components/StateMachine/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Server/components/WiFi/include}&quot;"/>
 								</option>
 								<option id="org.eclipse.cdt.build.core.settings.holder.symbols.1775337922" name="Symbols" superClass="org.eclipse.cdt.build.core.settings.holder.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="ESP_PLATFORM=1"/>
@@ -151,10 +149,9 @@
 									<listOptionValue builtIn="false" value="&quot;${IDF_PATH}/components/aws_iot/aws-iot-device-sdk-embedded-C/include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${IDF_PATH}/components/fatfs/src&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${IDF_PATH}/components/wear_levelling/include&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/cpp3/components/StateMachine/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/cpp3/components/WiFi/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/cpp3/components/Bluetooth/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Server/components/Bluetooth/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Server/components/StateMachine/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Server/components/WiFi/include}&quot;"/>
 								</option>
 								<option id="org.eclipse.cdt.build.core.settings.holder.symbols.150630511" name="Symbols" superClass="org.eclipse.cdt.build.core.settings.holder.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="ESP_PLATFORM=1"/>

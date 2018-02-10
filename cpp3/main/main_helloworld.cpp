@@ -83,7 +83,7 @@ while(1)
 
     //esp_task_wdt_feed(); //(1)
 	// use in while loop
-    vTaskDelay(1000); //(2)
+    vTaskDelay(10000); //(2)
 //s->send("Hello world");
     // to send data:
   // ss->sendData("Hello world");

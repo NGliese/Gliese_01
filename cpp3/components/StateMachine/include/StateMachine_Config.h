@@ -22,19 +22,21 @@ typedef struct {
 void zzz(void);
 void initialize_fcn(void);
 void ble_init_fcn(void);
+void ble_idle_fcn(void);
 void wifi_init_fcn(void);
 void wifi_idle_fcn(void);
 
+
 static const StateElement StateMatrix[8][6] =
 {
-	//   error_event			nill_event				done_event			       		 ble_init_event					wifi_init_event				idle_event
+	//   error_event			nill_event				done_event			       		 ble_init_event					wifi_init_event						idle_event
 	{ { nill_state,zzz}, 	   { nill_state,zzz},      { nill_state,zzz}  ,         	{ nill_state,zzz}  ,     	   { nill_state,zzz}   ,     		{ nill_state,zzz}    			}, // nill_state
 	{ { error_state,zzz}	,  { error_state,zzz},     { error_state,zzz} ,         	{ error_state,zzz},      	   { error_state,zzz}  ,     		{ error_state,zzz}   			}, // error_state
 	{ { init_state,zzz}, 	   { init_state,zzz},      { idle_state,initialize_fcn},	{ init_state,zzz} ,      	   { init_state,zzz}   ,     		{ init_state,zzz}    			}, // init_state
 	{ { idle_state,zzz},  	   { idle_state,zzz},      { idle_state,zzz} ,          	{ BLE_init_state,ble_init_fcn},{ wifi_init_state,wifi_init_fcn},{ wifi_init_state,wifi_init_fcn}}, // idle_state
-	{ { BLE_init_state,zzz},   { BLE_init_state,zzz},  { BLE_idle_state,zzz} ,	    	{ BLE_init_state,zzz} ,  	   { BLE_init_state,zzz} ,   		{ BLE_init_state,zzz}			}, // BLE_init_state
-	{ { BLE_idle_state,zzz},   { BLE_idle_state,zzz},  { BLE_idle_state,zzz} ,	    	{ BLE_idle_state,zzz} ,  	   { BLE_idle_state,zzz}  ,  		{ BLE_idle_state,zzz} 			}, // BLE_init_state
-	{ { wifi_init_state,zzz},  { wifi_init_state,zzz}, { wifi_idle_state,wifi_idle_fcn},{ wifi_init_state,zzz} , 	   { wifi_init_state,zzz},   		{ BLE_idle_state,zzz} 			}, // wifi_init_state
+	{ { BLE_init_state,zzz},   { BLE_init_state,zzz},  { BLE_idle_state,ble_idle_fcn} ,	{ BLE_init_state,zzz} ,  	   { BLE_init_state,zzz} ,  		{ BLE_init_state,zzz}			}, // BLE_init_state
+	{ { BLE_idle_state,zzz},   { BLE_idle_state,zzz},  { BLE_idle_state,zzz} ,	    	{ BLE_idle_state,zzz} ,  	   { BLE_idle_state,zzz}  ,  		{ BLE_idle_state,ble_idle_fcn}  }, // BLE_init_state
+	{ { wifi_init_state,zzz},  { wifi_init_state,zzz}, { wifi_idle_state,wifi_idle_fcn},{ wifi_init_state,zzz} , 	   { wifi_init_state,zzz},   		{ wifi_init_state,zzz} 			}, // wifi_init_state
 	{ { wifi_idle_state,zzz},  { wifi_idle_state,zzz}, { wifi_idle_state,zzz},			{ wifi_idle_state,zzz} , 	   { wifi_idle_state,zzz},   	    { wifi_idle_state,wifi_idle_fcn}}, // wifi_idle_state
 };
 
